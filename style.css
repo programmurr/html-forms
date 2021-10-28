@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --intuit-blue: #0077c5;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url("./font/AvenirNextLTPro-Regular.otf") format("otf");
+}
+
+body {
+  font-family: "AvenirNext", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#content-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+/* 
+  ==============================
+    SIGN IN AREA
+  ==============================
+ */
+
+#sign-in {
+  background-color: #eceef1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#sign-in-wrapper {
+  width: 30%;
+  max-width: 272px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+#account-navigation {
+  font-size: 0.65rem;
+  text-align: right;
+}
+
+#sign-in-text {
+  color: #505050;
+  margin-bottom: 5px;
+}
+
+#sign-in-link {
+  margin-top: 5px;
+  text-decoration: none;
+  color: var(--intuit-blue);
+}
+
+#sign-in-link:hover {
+  text-decoration: underline;
+}
+
+#sign-in-button {
+  background-color: var(--intuit-blue);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "AvenirNext", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  border: 1px solid #4c4c4c;
+  border-radius: 4px;
+  padding: 0 20px;
+  height: 30px;
+}
+
+/* 
+  ==============================
+    HEADER
+  ==============================
+ */
+
+#main-header {
+  background-color: coral;
+}
+
+#sign-up {
+  background-color: green;
+}
+
+form {
+  background-color: greenyellow;
+}
+
+footer {
+  background-color: hotpink;
+}
+
+footer #privacy {
+  background-color: khaki;
+}
