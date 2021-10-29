@@ -1,12 +1,15 @@
+:root {
+  --intuit-blue: #0077c5;
+  --intuit-background: #eceef1;
+  --intuit-font-color: #505050;
+  --intuit-button-border: 1px solid #4c4c4c;
+}
+
 * {
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
-}
-
-:root {
-  --intuit-blue: #0077c5;
 }
 
 html,
@@ -23,6 +26,7 @@ body {
 body {
   font-family: "AvenirNext", Arial, Helvetica, sans-serif;
   font-size: 16px;
+  background-color: var(--intuit-background);
 }
 
 #content-wrapper {
@@ -80,7 +84,7 @@ body {
   cursor: pointer;
   font-family: "AvenirNext", Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
-  border: 1px solid #4c4c4c;
+  border: var(--intuit-button-border);
   border-radius: 4px;
   padding: 0 20px;
   height: 30px;
@@ -93,16 +97,153 @@ body {
  */
 
 #main-header {
-  background-color: coral;
+  background-color: var(--intuit-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10%;
+  min-height: 84px;
+  color: var(--intuit-font-color);
 }
+
+#logos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+/* 
+  ==============================
+    SIGN UP BOX - HEADER
+  ==============================
+ */
 
 #sign-up {
-  background-color: green;
+  background-color: #fff;
+  width: 40%;
+  height: 60%;
+  min-height: 495px;
+  margin: 0 auto;
+  color: var(--intuit-font-color);
+  border: 1px solid #c7c7c7;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-form {
-  background-color: greenyellow;
+#sign-up-header-container {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
+#create-account {
+  font-size: 1.25rem;
+}
+
+#create-blurb {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#learn-more {
+  text-decoration: none;
+  color: var(--intuit-blue);
+}
+
+#learn-more:hover {
+  text-decoration: underline;
+}
+
+/* 
+  ==============================
+    SIGN UP BOX - FORM
+  ==============================
+ */
+
+form {
+  background-color: #fff;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+ul {
+  list-style: none;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 1.5rem;
+}
+
+.form-input {
+  border: 1px solid #c1c5c8;
+  border-radius: 2px;
+}
+
+form > button {
+  width: 90%;
+  height: 2rem;
+  background-color: var(--intuit-blue);
+  color: #fff;
+  border-radius: 4px;
+  border: var(--intuit-button-border);
+  cursor: pointer;
+}
+
+/* 
+  ==============================
+    SIGN UP BOX - FOOTER
+  ==============================
+ */
+
+#form-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  height: 10%;
+}
+
+#form-footer-container a {
+  text-decoration: none;
+  color: var(--intuit-blue);
+}
+
+#form-footer-container a:hover {
+  text-decoration: underline;
+}
+
+#form-footer {
+  width: 90%;
+  text-align: center;
+}
+
+/* 
+  ==============================
+    FOOTER
+  ==============================
+ */
 
 footer {
   background-color: hotpink;
