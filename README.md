@@ -4,4 +4,4 @@
 
 ## Status
 
-In progress. This will not be hosted on Github Pages as it mimics a live site and will be flagged as a security concern by Github. 
+Complete. This will not be hosted on Github Pages as it mimics a live site and will be flagged as a security concern by Github. 
